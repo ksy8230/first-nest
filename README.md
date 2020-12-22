@@ -71,3 +71,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+### 토막 기록
+1. express에서 get.router의 역할을 @Get 데코레이터로 대체한다.
