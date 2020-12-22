@@ -75,3 +75,9 @@ Nest is [MIT licensed](LICENSE).
 
 ### 토막 기록
 1. express에서 get.router의 역할을 @Get 데코레이터로 대체한다. 실제 비즈니스 로직을 하는 함수들은 service 파일에 들어간다. (역할 분리)
+2. nestjs cli를 사용하기 때문에 컨트롤러를 커맨드라인에서 몇 줄로 생성이 가능하다
+```
+nest g co
+```
+- 컨트롤러 이름이 movies이기 때문에 http://localhost:3000/movies 이런식으로 라우팅이 설정된다
+- 동적 라우팅을 할 때는 Param값과 Get 파라미터값이 같아야 한다
