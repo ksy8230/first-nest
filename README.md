@@ -74,4 +74,4 @@ Nest is [MIT licensed](LICENSE).
 
 
 ### 토막 기록
-1. express에서 get.router의 역할을 @Get 데코레이터로 대체한다.
+1. express에서 get.router의 역할을 @Get 데코레이터로 대체한다. 실제 비즈니스 로직을 하는 함수들은 service 파일에 들어간다. (역할 분리)
