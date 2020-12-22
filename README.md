@@ -81,3 +81,4 @@ nest g co
 ```
 - 컨트롤러 이름이 movies이기 때문에 http://localhost:3000/movies 이런식으로 라우팅이 설정된다
 - 동적 라우팅을 할 때는 Param값과 Get 파라미터값이 같아야 한다
+- body가 필요하면 body를 요청해야하고 param이 필요하면 param을 요청해야하는 게 포인트 (nestjs가 설정한 규칙이자 구조)
