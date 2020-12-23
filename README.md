@@ -58,22 +58,10 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
-
 
 ### 토막 기록
+0. express 위에서 돌아간다.
+
 1. express에서 get.router의 역할을 @Get 데코레이터로 대체한다. 실제 비즈니스 로직을 하는 함수들은 service 파일에 들어간다. (역할 분리)
 2. nestjs cli를 사용하기 때문에 컨트롤러를 커맨드라인에서 몇 줄로 생성이 가능하다
 - 컨트롤러 만들기
@@ -111,3 +99,21 @@ nest g mo
 
 5. nestjs의 dependency injection
 - providers를 제공함으로서 nestjs가 service를 import하고 controller에 inject한다
+
+6. nestjs는 express 프레임워크 기능을 하며, fastify 같은 다른 라이브러리와도 호환
+
+----------
+## Support
+
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+
+## Stay in touch
+
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
+
+## License
+
+Nest is [MIT licensed](LICENSE).
+
