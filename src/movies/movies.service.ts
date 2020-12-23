@@ -7,11 +7,11 @@ import { Movie } from './entities/movie.entity';
 export class MoviesService {
     private movies: Movie[] = [];
 
-    getAll() : Movie[] {
+    getAll() : Movie[] { 
         return this.movies;
     }
 
-    getOne(id:number) : Movie {
+    getOne(id:number) : Movie { 
         const movie = this.movies.find(m => m.id === id);
         if(!movie) {
             throw new NotFoundException('Movie with ID is not found');

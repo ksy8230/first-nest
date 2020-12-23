@@ -59,7 +59,8 @@ $ npm run test:cov
 ```
 
 
-### 토막 기록
+## 토막 기록
+
 0. express 위에서 돌아간다.
 
 1. express에서 get.router의 역할을 @Get 데코레이터로 대체한다. 실제 비즈니스 로직을 하는 함수들은 service 파일에 들어간다. (역할 분리)
@@ -100,8 +101,14 @@ nest g mo
 5. nestjs의 dependency injection
 - providers를 제공함으로서 nestjs가 service를 import하고 controller에 inject한다
 
-6. nestjs는 express 프레임워크 기능을 하며, fastify 같은 다른 라이브러리와도 호환
+6. nestjs는 `express` 프레임워크 기능을 하며, `fastify` 같은 다른 라이브러리와도 호환
 
+7. jest는 자바스크립트를 쉽게 테스팅하는 npm 패키지
+- `npm run test:cov` : 얼마나 테스트 되었는지 체크 가능
+- `npm run test:watch` : 테스트 파일을 작성할 때마다 콘솔 실행
+
+- 유닛 테스트 : 서비스에서 분리된 함수 단위의 유닛을 테스트하는 것
+- e2e : 사용자가 취할만한 액션들을 처음부터 끝까지 테스트하는 것 (사용자 관점 테스트)
 ----------
 ## Support
 

@@ -9,8 +9,7 @@ export class MoviesController {
     constructor(private readonly moviesService: MoviesService) {}
 
     @Get()
-    getAll(@Req req, @Res res) { 
-        // nestjs에서 express 앱으로 접근하는 방법
+    getAll() { 
         return this.moviesService.getAll();
     }
 
