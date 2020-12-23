@@ -108,3 +108,6 @@ npm i @nestjs/mapped-types
 ```
 nest g mo
 ```
+
+5. nestjs의 dependency injection
+- providers를 제공함으로서 nestjs가 service를 import하고 controller에 inject한다
