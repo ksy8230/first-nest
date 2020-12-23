@@ -96,3 +96,9 @@ npm i class-validator class-transformer
 - 작성한 DTO의 쿼리들마다 class-validator 이용한 유효성 검사 추가
 - ValidationPipe에 `whitelist`, `forbidNonWhitelisted` 속성값을 true로 하면 해당 dto 외의 쿼리는 아예 받지 않는다
 - ValidationPipe의 `transform: true` 속성값을 이용해 url에서 string으로 들어온 id를 number로 받는다
+- mapped-types은 타입을 변환시키고 사용할 수 있게 하는 패키지
+```
+npm i @nestjs/mapped-types
+```
+- 같은 dto 쿼리를 같지만 전부 필수값이 아닌 경우 PartialType 사용
+- nestjs를 사용하면 typescript의 타입 지정으로 인한 보안을 이용할 수 있고 유효성 검사도 가능하다
