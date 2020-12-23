@@ -94,3 +94,4 @@ nest g s
 npm i class-validator class-transformer
 ```
 - 작성한 DTO의 쿼리들마다 class-validator 이용한 유효성 검사 추가
+- ValidationPipe에 `whitelist`, `forbidNonWhitelisted` 속성값을 true로 하면 해당 dto 외의 쿼리는 아예 받지 않는다
