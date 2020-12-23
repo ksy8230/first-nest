@@ -1,4 +1,5 @@
 import { Body, Controller, Delete, Get, Param, Patch, Post, Put, Query } from '@nestjs/common';
+import { CreateMovieDTO } from './dto/create-movie.dto';
 import { Movie } from './entities/movie.entity';
 import { MoviesService } from './movies.service';
 
@@ -22,7 +23,7 @@ export class MoviesController {
     }
 
     @Post()
-    create(@Body() movieData){
+    create(@Body() movieData: CreateMovieDTO){
         console.log(movieData)
         return this.moviesService.create(movieData);
     }

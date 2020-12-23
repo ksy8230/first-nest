@@ -87,3 +87,10 @@ nest g co
 ```
 nest g s
 ```
+3. DTO 작성 (data transfer object)
+- nestjs가 들어오는 쿼리에 대해 유효성 검사
+- main.ts에서 app과 ValidationPipe을 ValidationPipe로 연결
+```
+npm i class-validator class-transformer
+```
+- 작성한 DTO의 쿼리들마다 class-validator 이용한 유효성 검사 추가
