@@ -102,3 +102,9 @@ npm i @nestjs/mapped-types
 ```
 - 같은 dto 쿼리를 같지만 전부 필수값이 아닌 경우 PartialType 사용
 - nestjs를 사용하면 typescript의 타입 지정으로 인한 보안을 이용할 수 있고 유효성 검사도 가능하다
+
+4. 모듈 분리
+- 무비 기능만하는 모듈을 앱에서 따로 분리시키기
+```
+nest g mo
+```
