@@ -34,7 +34,7 @@ describe('AppController (e2e)', () => {
         .expect(200)
         .expect([]);
     });
-    it('POST', () => {
+    it('POST 201', () => {
       return request(app.getHttpServer())
         .post('/movies')
         .send({
@@ -44,7 +44,18 @@ describe('AppController (e2e)', () => {
         })
         .expect(201)
     });
-    it('DELETE', () => {
+    it('POST 400', () => {
+      return request(app.getHttpServer())
+        .post('/movies')
+        .send({
+          title: "test",
+          year: 2020,
+          genres: ['test'],
+          hack : false
+        })
+        .expect(400)
+    });
+    it('DELETE 404', () => {
       return request(app.getHttpServer())
         .delete('/movies')
         .expect(404)
@@ -55,8 +66,15 @@ describe('AppController (e2e)', () => {
     it('GET 200', () => {
       return request(app.getHttpServer()).get('/movies/1').expect(200);
     });
-    it.todo('DELETE');
-    it.todo('PATCH');
+    it('Get 404', () => {
+      return request(app.getHttpServer()).get('/movies/999').expect(404);
+    });
+    it('PATCH 200', () => {
+      return request(app.getHttpServer()).patch('/movies/1').send({title: 'update test'}).expect(200);
+    });
+    it('DELETE 200', () => {
+      return request(app.getHttpServer()).delete('/movies/1').expect(200);
+    });
   });
 
 
